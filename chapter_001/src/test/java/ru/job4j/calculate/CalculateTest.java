@@ -9,20 +9,20 @@ import static org.junit.Assert.assertThat;
  * @author Timur Cheshuin
  * @since 28.05.19
  * @version 1
-*/
+ */
 
 public class CalculateTest {
- /**
- * Test echo.
- */
- 
- @Test
- public void whenTakeNameThenThreeEchoPlusName() {
-    String input = "Timur Cheshuin";
-    String expect = "Echo, echo, echo : Timur Cheshuin"; 
-    Calculate calc = new Calculate();
-    String result = calc.echo(input);
-    assertThat(result, is(expect));
- }
+    /**
+     * Test echo.
+     */
+
+    @Test
+    public void whenTakeNameThenThreeEchoPlusName() {
+        String input = "Timur Cheshuin";
+        String expect = "Echo, echo, echo : Timur Cheshuin";
+        Calculate calc = new Calculate();
+        String result = calc.echo(input);
+        assertThat(result, is(expect));
+    }
 
 }
