@@ -4,7 +4,19 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
+/**
+ * Test
+ * @author Timur Cheshuin
+ * @since 03.06.19
+ * @version 1
+ */
+
 public class CalculatorTest  {
+
+    /**
+     * Test add.
+     */
+
     @Test
     public void whenAddOnePlusOneThenTwo()  {
         Calculator calc = new Calculator();
@@ -12,6 +24,10 @@ public class CalculatorTest  {
         double expected = 2D;
         assertThat(result, is(expected));
     }
+
+    /**
+     * Test subtract.
+     */
 
     @Test
     public void whenSubThreeMinusTwoThenOne()  {
@@ -21,6 +37,10 @@ public class CalculatorTest  {
         assertThat(result, is(expected));
     }
 
+    /**
+     * Test div.
+     */
+
     @Test
     public void whenDivFourOnTwoThenTwo()  {
         Calculator calc = new Calculator();
@@ -28,6 +48,10 @@ public class CalculatorTest  {
         double expected = 2D;
         assertThat(result, is(expected));
     }
+
+    /**
+     * Test multiple.
+     */
 
     @Test
     public void whenMultTwoOnThreeThenSix()  {
