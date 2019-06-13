@@ -16,17 +16,14 @@ public class Check {
      */
 
     public boolean mono(boolean[] data) {
-        boolean result = false;
+        boolean result = true;
         int index = 1;
             while (index < data.length) {
-                if (data[index] == data [index - 1]) {
-                    result = true;
-                    index++;
-                }
-                else {
+                if (data[index] != data [index - 1]) {
                     result = false;
                     break;
                 }
+                index++;
             }
         return result;
     }
