@@ -18,13 +18,11 @@ public class ArrayChar {
         char[] wrd = word.toCharArray();
         int index = 0;
         while (index < pref.length) {
-            if (wrd[index] == pref[index]) {
-                index++;
-            }
-            else {
+            if (wrd[index] != pref[index]) {
                 result = false;
                 break;
             }
+            index++;
         }
         return result;
     }
