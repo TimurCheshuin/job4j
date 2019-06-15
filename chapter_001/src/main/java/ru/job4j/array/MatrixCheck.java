@@ -11,6 +11,7 @@ public class MatrixCheck {
 
     /**
      * Method mono
+     *
      * @param data
      * @return result.
      */
@@ -18,16 +19,13 @@ public class MatrixCheck {
     public boolean mono(boolean[][] data) {
         boolean result = true;
         int size = data.length;
-            for(int i = 0; i < size; i++) {
-                for(int j = 0; j < size; j++) {
-                    if ((i == j) || ((i + j) == size - 1)) {
-                        if ((data[i][j] != data[size - 1 - i][size - 1 - j]) || (data[i][j] != data[size - 1][size - 1])) {
-                            result = false;
-                            break;
-                        }
-                    }
+        for (int i = 0; i < size; i++) {
+            int j = i;
+                if ((data[i][j] != data[size - 1 - i][size - 1 - j]) || (data[i][j] != data[size - 1][size - 1])) {
+                    result = false;
+                    break;
                 }
-            }
+        }
         return result;
     }
 }
