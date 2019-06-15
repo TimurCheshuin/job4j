@@ -17,14 +17,16 @@ public class BubbleSort {
 
     public int[] sort(int[] array) {
         int change = 0;
+        int size = array.length;
         for (int i = 0; i < array.length; i++) {
-            for (int index = 1; index < array.length; index++) {
+            for (int index = 1; index < size; index++) {
                 if (array[index] < array[index - 1]) {
                     change = array[index];
                     array[index] = array[index - 1];
                     array[index - 1] = change;
                 }
             }
+            size--;
         }
         return array;
     }
