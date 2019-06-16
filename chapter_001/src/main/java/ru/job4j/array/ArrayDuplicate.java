@@ -27,6 +27,7 @@ public class ArrayDuplicate {
                     array[j] = array[size - 1];
                     array[size - 1] = change;
                     size--;
+                    j--;
                 }
             }
         }
