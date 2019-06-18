@@ -35,7 +35,7 @@ public class LogicTest {
         Logic logic = new Logic(5) {
             @Override
             public int[][] convert() {
-                return new int[][] {
+                return new int[][w] {
                         {0, 0, 0, 0, 0},
                         {0, 0, 0, 0, 0},
                         {1, 1, 1, 1, 1},
