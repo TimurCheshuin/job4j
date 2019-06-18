@@ -11,7 +11,7 @@ import static org.junit.Assert.assertThat;
  */
 public class FactorialTest {
     /**
-     * Test calc.
+     * Test calculate.
      */
     @Test
     public void whenCalculateFactorialForFiveThenOneHundreedTwenty() {
@@ -20,7 +20,7 @@ public class FactorialTest {
         assertThat(result, is(120));
     }
     /**
-     * Test calc.
+     * Test calculate.
      */
     @Test
     public void whenCalculateFactorialForZeroThenOne() {

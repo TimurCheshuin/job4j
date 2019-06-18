@@ -7,9 +7,9 @@ package ru.job4j.loop;
  */
 public class Factorial {
     /**
-     * Method calc.
+     * Method calculate.
      * @param number positive integer.
-     * @return the factorial of a number n.
+     * @return the factorial of a number.
      */
     public int calculate(int number) {
         int result = 1;
